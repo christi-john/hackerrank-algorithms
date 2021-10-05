@@ -21,13 +21,13 @@ def compareTriplets(a, b):
     # Write your code here
     alice=0
     bob=0
-    list1=[]
+    
     for i in range(len(a)):
         if(a[i]>b[i]):alice+=1
         elif(a[i]<b[i]):bob+=1
-    list1.append(alice)
-    list1.append(bob)
-    return list1
+   
+    return [alice,bob]
+
 
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
