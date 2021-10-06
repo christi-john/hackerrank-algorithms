@@ -17,16 +17,15 @@ import sys
 
 def migratoryBirds(arr):
     # Write your code here
-    # list1=[]
-    # list2=[]
-    # for i in range(len(arr)):
-    #     list1.append(arr.count(arr[i]))
-    # for j in range(len(list1)):
-    #     if(list1[j]==max(list1)):
-    #         list2.append(arr[j])
-    # return min(list2)
-    if(max(height)>k): return max(height)-k
-    else: return 0
+    list1=[]
+    list2=[]
+    for i in range(len(arr)):
+        list1.append(arr.count(arr[i]))
+    for j in range(len(list1)):
+        if(list1[j]==max(list1)):
+            list2.append(arr[j])
+    return min(list2)
+
 
 
 if __name__ == '__main__':
