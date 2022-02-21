@@ -17,16 +17,14 @@ import sys
 
 def migratoryBirds(arr):
     # Write your code here
+    arr.sort()
+    n= list(set(arr))
     list1=[]
-    list2=[]
-    for i in range(len(arr)):
-        list1.append(arr.count(arr[i]))
+    for i in n:
+        list1.append(arr.count(i))
     for j in range(len(list1)):
         if(list1[j]==max(list1)):
-            list2.append(arr[j])
-    return min(list2)
-
-
+            return n[j]
 
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
